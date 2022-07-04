@@ -9,9 +9,10 @@ public class for_loop2 {
 		int reverse = 0;
 		int remainder = 0;
 		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
 		
 
-		for (int n = sc.nextInt(); n > 0; n = n / 10) {
+		for (; n > 0; n = n / 10) {
 			remainder = n % 10;
 			reverse = reverse * 10 + remainder;
 		}
